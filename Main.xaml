@@ -1,0 +1,426 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="558,3270" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="41">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="35">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="552,3205" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="location" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="filterdDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="BuiltdataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="510,51" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,330" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Ask for location" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="scrape property listing of:" Title="Location">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[location]</OutArgument>
+            </ui:InputDialog.Result>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InputDialog>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Property and houses for sale in Cape Town : Cape Town Property : Property24.com " sap:VirtualizedContainerService.HintSize="510,3022" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="75821e6f-1986-4a8d-8be4-a60d3efd9f4a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,2806" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,143" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="type city" EmptyFieldMode="[NEmptyFieldMode.None]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="75821e6f-1986-4a8d-8be4-a60d3efd9f4a" Text="[location + &quot;[k(enter)]&quot;]" Version="V1">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.property24.com/apartments-for-sale/cape-town/western-cape/432" DesignTimeRectangle="479, 191, 300, 22" ElementType="InputBox" FriendlyName="'INPUT token-input-AutoC…'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="bb56c2bb-a2ec-4475-8ec2-cdbac2bd0fd9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATAAAAAaCAYAAAAwuwAXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARbSURBVHhe7Zi9cioxDIXv+z9D2hQpUqRhQptiOzqaLW5NEd5hryT/HdleYJKQrHPPN8OAjVeSZenswp+FEEIGhQJGCBkWChghZFgoYISQYaGAEUKGhQJGCBkWChghZFgoYISQYfl2AZv3L8vuGAcrnKfX5eHxZXma3uPMb+R9mZ5fl+kUhx/gllx+G8e35WE/x8HX8H/UAfkMIGDzspNi0YJ5ePxcY13ietNpY79JNPdDYwj7LM1hzfJ8WM46kGb8UNOcDstTzuG1PWxPwCwHWYSq+K4J1A0ChnnH3Pe5fx2Q8ckC5ptBxOyL76aJ602nQnq/wrUmgr3N+46IfEjAqoYXMdtdbdBtCZgJcBJxjV/iQ4G/6OsmAcP9Xjvn+9YB+R1kAfN3XwSezFJx6yzcTVNhW4FOUsh5rr3Wmm4f1uC1iWI3FHv6GaGvIirh7jzZd5UIaCPF9e1+LjRFakB8ipKY/1Z5uSQa+l0rfP5JoghBELCn5+gL9uEaHcS0zq/5Extpv724uvnTPe4P4j/sMZ2pi1X87o6Sr3xuJSa0mX1q/nQ/cb5XS62ApXG/ToKPuAbPJdm23IjQ5rnWTtir7KWeV3o2e3Nks/j/wLQI7fBSw1VPCVbU8i6HPKXCtQIJq63o8qHrtVDgp3mZxY5bo/6aIgGRsaZIBYf2wueuWEzovxIrjRULGIFYtEFrsQzflIZeIze3i7vE4QWsFoBwzbqA+aYyAUNRqsV5LX+2FsWkkHyH9xQ77AHyZDZFCM3+mi+giFJ4lTx0akxznfeDnzWHcvPS9erzhlotecE1ahPXS33aXMcP2Sz9P/Fzo+uB+qJLDYN34dJ4WLS+GBJujfq5IGBeSHBcFStiBZvirdf0YzKgMXt+Neb0fhPZnsaKTeGfwEp8EtsNAob+/dj7UXr7sHE+35awZs7CFOItsek4n7u9ok/InxKui4NI3pfzr2eC9lKNwVm5Mw0vs+18rtip9tqPIbLmh2yWLGCu+O0gdbwiFNBUVkSxENqGgrHczZs16ueCgKFtb28lLr3WNUa7Rv37RjsUX3E+N3om2J3kp0gdbQF9Czl2jLXeA+QC/GOO9HOKxefXf9dtyLX89dYm7DvZf8qR2LCfYHjezZkJja9e7stcyXF/rawudeA+Ay6WFTvVXksMvj7OUp+rfshmKf+BHeWg850HC0EP1d+RzlrUaU6LOxZI3WBWPPnaYNOt0e+bZvBFhHf8IiprxSrXSpOG9RIXPskAGkOxKQKm8WAz5LirOKCpm6c7FWibL/7bPcg18rMk7D/sofwHBo0Ddnb6H8+qgOH1/b1281c1tSecd/FTj73NLFpaE7KfxheAAubths/p2jIHOenUkhcwpWOn2quLoXdePT9ks/R/QpIG33w6huYihPwIFLBrpLs03On1CQSfSAghPwMFjBAyLBQwQsiwUMAIIcNCASOEDAsFjBAyLBQwQsiwUMAIIcNCASOEDMqy/AOzQSkOnw91bAAAAABJRU5ErkJggg==" InformativeScreenshot="bddea8b7ee64e65b2f6305a02610cd68.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='EcosystemId' title='Apartments / flats for sale in Cape Town : Cape Town Property : Property24.com' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,248" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Search'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75821e6f-1986-4a8d-8be4-a60d3efd9f4a" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.property24.com/for-sale/cape-town/western-cape/432" DesignTimeRectangle="856, 186, 101, 30" ElementType="Button" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl aaname='Search' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Search' tag='BUTTON' type='' class='btn btn-danger' check:innerText='Search' /&gt;" Guid="cd62148e-1941-4ead-820f-36dd33d5e60b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGkAAAAiCAYAAABcHfeVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGeSURBVGhD7Zs/SsRQEMZfLwjeQ9jS3kP4BxQt9BQeIY1XsBKsYiUWIlayuYBWOYPsBcb5sm9CsnnVRtkZ+AZ+kH2Z7IbvxyRbJCldvEi6fJV09UY8cf0u6eZT0u1SUjp/FuKLg5NH2Tt9Wg8PRInVYp844evoUO6Pz9bSMFFZUbGZ7JZOEi59WVGxiewWSgoAJQWAkgJASQGgpABQUgAoKQCUFABKWtyJrH5EqtI+H/iWVH3kk0J9l3tmQ0kz2AgPwhpdm/TNhZLm0er5lMQMJ6x9yOsIO6/JIPRWtxudQlRdOjZLQl9X/oT5vyc1ObyVhtutabDDSx8EINRa91u4ta6ZXIjuReLYgYTaJOmy9eP3/mVityfOHwcEj7BH96lcmBD0QIiVicGa7cexvWwjT1JJsBMcS9KQh4EivO4zpkG3R70KJsBkYLskaXOSKsigpO1BgAisr4GY0TTlgO2yiGq1tyhJmXwnJZE/gJICQEkBoKQAUFIAKCkAlBQASgoAJQWAkpyD58EpyTGTB/a7DeITe/WFL5E5pX+JbCm/6HDYxEPoSScAAAAASUVORK5CYII=" InformativeScreenshot="2a8b48847bd70e64fa47456804ccbd55.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='EcosystemId' title='Property and houses for sale in Cape Town : Cape Town Property : Property24.com' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="890, 194, 32, 14" ElementType="Text" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl aaname='Search' parentid='SearchBar' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Search' parentid='SearchBar' tag='SPAN' type='' class='' check:innerText='Search' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAASCAYAAAAzI3woAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD1SURBVEhL7ZLBDcMwCEU7QVbpgB3BU3QDr9BrJujJM1RZgP4fgYsdt0mkSM3BSF9yAMOD+CLXQc6kDrSmDrSmPwDdRKaXSGjFaqDwkI89i8TjtBmoSiTcCF+OH6U9G0pYTAvCby7d1c/C6hPXIOE8Yru02LqrQMybrYRbvqFREycUmn0o4n8fm7FARNwKRfhsEA6VoXnXNYwGBLfls59bwvdHzSYsXLwrNU7OHDY3Mwj6LM67eTCTbqg1DOSAUNBfZuL8zSlxznkqTmaNeW4B1RsKbLwViMkMZnMQxZa0mP1aWkJuEwha1NwKdBJ1oDV1oN8a5A2kWEUdffPf1AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="722,714" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'Apartment'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="75821e6f-1986-4a8d-8be4-a60d3efd9f4a" Version="V1">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="250,84" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="376,446" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ClickType="Single" DelayAfter="0.4" DisplayName="Click 'Any'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75821e6f-1986-4a8d-8be4-a60d3efd9f4a" Version="V1">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.property24.com/" DesignTimeRectangle="215, 446, 150, 34" ElementType="Button" FriendlyName="'Any'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='dropdown-toggle p24_advanceSearchDropdown' aaname='Any' check:innerText='Any' /&gt;" Guid="b45a24c9-8aaf-43c2-86d1-9ab6084d4683" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAmCAYAAAA894IZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHtSURBVHhe7dw9TgJBGIBh7uBBLLyIl7C38xhQeAMPIIU3IBbQUEm02YpYUKAhopBIPvl2d9i/kR93ZoLLu8kTdXe0ejPfLibbal31BfDOehJwzXxzdjOU886zXNy+ALVpS9pUJTQig2vaVCU020KgLkJDEISGIAgNQRAagiA0BEFoCILQEAShIQhCQxD+QhstRY/ZeGK/jpPiLbTuVCSarmNbzKVtuY7T4im0d4lkJYOe+Wpbg1PiJzQdm+lOpjtbcXzmIzSHiTE5Vx63+jdk+l44B3euH8bW83n7rNnGS2j5uNrjVWl8msCW0s2t36zJRZqtZ1f0RQN6+/qWzuPv99J6TdfUic1DaKUwenOZFUJJQotG5ue1Qlyl36+EB9cu7yIZvn7K/VN1aug5vaZrytcO4T609GmzfGTjcFdo6S6Yjsr4oSK/Ft7ko9oW3184D812P1Ucn7tDS3ZBHa26Nhux8E/H5MdyFds2Tg/lPLRKRKowPvcIbS3eyfTjER4CgtN7sbo3/2XOQ8vf5GcmMliYnW6/0MwIZmw2g/PQnNmMT8s1/DtHGlqyA/Lvq+Y4utDihwk9uDdrlKMLDc1EaAiC0BAEoSEIQkMQhIYgCA1BVELjtVVwzfraKl7EB5e0JeuL+ACvrCcBp/ryA2YBIuEm7uPJAAAAAElFTkSuQmCC" InformativeScreenshot="b4acb53a94430ff7d60c0530643d1ce5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='EcosystemId' title='Property for Sale: Houses for sale: Property24' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                  <uix:Target DesignTimeRectangle="231, 455, 103, 17" ElementType="Text" FriendlyName="'Any'" FullSelectorArgument="&lt;webctrl parentid='PropertyTypes' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='PropertyTypes' tag='SPAN' type='' class='type p24_singleLineEllipse' aaname='Any' check:innerText='Any' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAVCAYAAABBlxC9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAErSURBVGhD7Zg9CoNAEEZzpxw0TQ7iHexyACGNlZWFSCCQFDJx3L+Z3UAkrsjCt/CQ7I4pfMzn4Ol8vRMoA8gqCMgqCMgqCMgqiFRW8yZej67X++BwElnVQNQOs7DXky7RGTiWSNZILU10q91VnoGj0bI4Am1HcYfpKJQi3XJCzV4cnfwfNIxqD/yPkiUFXbopikIn6U2VqPc1QnSoR3fmRMiKHm79pId62EZW27jfM0pQdH8iD2wlyLJTYLxCtP2SZbvRxt4yqMhasBkv69v7RUfhb1mmGzkmuTbEJciDl5WIYFQUrpA1s3QUj/4YLLLjZcnBIdDT7eU6bp0sF6eIwPyIASMTPgq/nIFNZJZlOhGfqvYhm6xlQOGFd9Vu5I9BsBuQVRCQVQx3+gBS8nW66dYyjgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                  <uix:Target DesignTimeRectangle="215, 418, 87, 22" ElementType="Text" FriendlyName="'Property Type'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='p24_label p24_advanceSearchDropdownLabel' aaname='Property Type' check:innerText='Property Type' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAaCAYAAADYMiBQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI9SURBVGhD7ZdNjsIwDIW57Jyg1+ECHKI7NlwAdTUSq0psRixghZSx0zROnJe2lAkDUix9Uu00if3yQ9lsvg6m8iJgsFIGGKyUAQYrZYDBShlgsFIGGKyUAQYrZRDnbI5G2fVimvDlN6HpLmYL4tOA+rzdVoy3AnEomf4cN+5vbyn4OrFDqNb/qEscIDax7V+06g/wfE4fILZ93l3MD588n+zJtFd7FgdTY0R9rN1Nu5N2C5+g0SIRaOye/LGdxt72w+NgNNY3tSV5z4mp27mGNK+mu5vj3rWHeVgDC56twyEOEJs7BzFb6EySnOBPd/J+2ofmCRNVc2x4YbzvFlLlpXd2stNpzEGkHGAxaN5jkLcXeHzWeXCe4RiTdTjEYRGUzRTJE4TCDnBi8l7Sh0h2jGqXPnPtDiUumjMGiK3nisTP5TFutIV5SiPY2Yq5IkfC92Dhvh8lGV5B3sY+C4uI3jubNtkAGiQ2EdQT/wjjPJruJmJP1uGQzuvExjtbrhYk9tzOFnA7XsCLnVMEmCIjNs/XsQZai1we0zs7QZwVYvMkC+7saEFogaI7nH1V2Ha/9PiGcP4k+JKis2K7xSLiE8t1mijGdUZ5T9bhEGeN2MyQiDc1BvdpObHRMsdXjHf9tNj2x8e9rQVITxoiL7ZtS740hjza8EsIaZWtwxE5BcALVIZlV8gcaNNlFv1RYPAPeZnY6FNrBfiKqmIP+CvluXnGP0v4GvoQsSsBMFgpAwxWygCDlTLAYKUAB/ML2Ty3YeNCLwAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ClickType="Single" DisplayName="Click 'Apartment / Flat'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="75821e6f-1986-4a8d-8be4-a60d3efd9f4a" Version="V1">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.property24.com/" DesignTimeRectangle="231, 243, 195, 34" ElementType="Text" FriendlyName="'Apartment / Flat'" FullSelectorArgument="&lt;webctrl aaname='Apartment / Flat' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apartment / Flat' tag='LABEL' type='' class='' check:innerText='Apartment / Flat' /&gt;" Guid="8e2d8823-24fc-444e-80fd-1ffc15007de5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMcAAAAmCAYAAABwHY/hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMlSURBVHhe7ZrLatwwFIb7hHmBPEO22WaTZyizCExfIot5iwyzKIRAF6Vgsiql0Hal6MhH9tHlzEjuXCzP/4EpHkm2pPN/tqH5ZAAAWSAHAAqQAwAFyAGAAuQAQAFyAKAAOQBQgBwAKEAOABQgBwAKkAMABcgBgEK1HD9//Tav336Yr2/fiw/qT+MAaIlqOSjof/7+47MyqD+NA6AlquWgN8EUpo4DFbxvzP3DxnR8WsTuydzcPpktn4KR9uRwxbwz95uqCEykM88Pj+b5nU8vRLd5LFqv1m+7vnN7Fh4sRJUc89iPc9GcHFTo1doWtPYJOYkXs7q9fBhozYfl0IPr5Fi/8FlElRzz2I9z0ZgcvjjnKlJDcuz5pIIc02hLDiokByANDBduZ0MiPh9WO24m+JPMH3I8fZJQgNy/1P75S3CdGx8KnsPW96PDBY/uH/UdoKe6b/P9Gb8mObch5NE4e6iS2PFaW50c8T25jeQT80jXuDyakkMK4UIcPCk5nPK3oPC2PWkbC+ylyAonQ8AhHvoNoRkDFocxdz6M5+uN7f065DyC/grbtR7W+P4BkRy0D+MDhUUJ5rZ8KTwNyREVxoVSFqoPVfCmyP7mCdtS2YhMGKIw+QDJewTXcvOU/S3yEyi5XirDYTnsPJO5jzg5SEBxDPPN3F8S7ktmPxZMO3L4J2x0jKHJidAHNw6aHH9yOZR5h+3/KYe9xr52t+bCN4cj/oSCHGVcSo5cgdOnWiyH+I0LPraH/U8mR+7NITmCHNQerjukRg7XV+xDuseQQ+UycuSCb3HB88Xq+8gQBIWmEMRFL5Ijum+tHNwehrMznQ9YoRxquN0c98hnKZcjXgvvaSBHpg4LpQk5+iDnAiCDx4Wj/wOhgrojDbFvo/BRaPbL4e/dj3F9q+XocQHl6/j7OwrkCD5z4pBTmypOz2G5RLubD9+L5kXXF2tJ9mPBVMsx37+tuq6nmofCem1rPhfVcsz3r3KvUQ5ac+6NCo5BtRzz5TrfHOB0LEgOAI4L5ABAAXIAoAA5AFCAHAAoQA4AFCAHAAqQAwAFyAGAAuQAIIsxHy+KoxkmvG7xAAAAAElFTkSuQmCC" InformativeScreenshot="d25e7aa173b6a27d18c89675aefe0510.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='EcosystemId' title='Property for Sale: Houses for sale: Property24' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.property24.com/" DesignTimeRectangle="231, 410, 103, 17" ElementType="Text" FriendlyName="'Apartment'" FullSelectorArgument="&lt;webctrl parentid='PropertyTypes' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='PropertyTypes' tag='SPAN' type='' class='type p24_singleLineEllipse' aaname='Apartment' check:innerText='Apartment' /&gt;" Guid="3393cc0a-3f4b-400f-96ae-e8690ff09143" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAVCAYAAABBlxC9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHDSURBVGhD7ZfBbsIwDIb3TnvQXvYgfQduPEAlLj1x6qFCSEygCXlxEqd2nA2qjdIgW/qFFidt/H+JGW/vHzsw1SGDVZEMVkUyWBXJYFUkDau7AMZxP8jxh2iA7fkK200pt5ya/XWhev8mBasdAfrRATufoMly/68D9PB8WFhzhbDIvKVMNFhzJGFhC4w3ShcQje1OcPSNMkTfZetZ8PXYamA8hE+Mzy/xHCBocQ8tzcNw68L7KXLA2E5jCsPPjzmqie8tdY1snYs1QxOwOCBvqmiF0Sw+5g24QEt5lZtMJUjFA8CNj6ameRs6HPSesE8OpPR3Wk+QUj7UwfehD+Y6xWBlxnmTuJGhSHGTimPlnIZPc0qwJjB0+vk7xLP8Pvn8OEZ59TwNpz5YdAKzmIoogQlG5oXzeDisH/Yt8y8Gy5vMe72TNLgEi43FdjXl5fxFbxbXK8LSIJxEKwzmq+8KfoIZDG+oi9uwsvfOhRXz8qAN0NABuBNWflDXqAQrLyiIGxGNxd9gKbSpFGgGmvA7rAkqhp87G1aQN5xFgnEHLOoKPlYMjf2DcUuFW2BaVAarIhmsijQDlunZMlgVyWBVox18A+4QRir4jHa1AAAAAElFTkSuQmCC" InformativeScreenshot="a0a8d26e76c76f836a7af57f01689f2d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='EcosystemId' title='Property for Sale: Houses for sale: Property24' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="215, 401, 150, 34" ElementType="Button" FriendlyName="'Apartment'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='dropdown-toggle p24_advanceSearchDropdown' aaname='Apartment' check:innerText='Apartment' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAmCAYAAAA894IZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKcSURBVHhe7Zw9UhtBEEa5Awdx4ItwCefOOIYIfAMfwAp8A4oAEiKr7ESRyoECmaIAo7JV7e2Z6d2eH4RkzTRIfF31CjHdq52l385sEezR0YdLAqA5xUEAaiMfjk+v6d3Zd3r/6QcAO8MusVOZaJAM1IadykQrFQKwKxANmADRgAkQDZgA0YAJEA2YANGACRANmADRgAkQDZjQTrTJkjhuZ/Nyvipzunpc0dV5KWfHaLYyut79o5lo4wXRdNHJ9nhPo0K+Ljc0pZcXja8ZopVpJJo03koAiPbaaSMab5thJcv/+EGKyT3dus3Vx3SSHK9CH8/bEy1u/E+Ohz/R95AIF+YwljqO7jh/folUTt6CQ4rD1YecXJOeW79aJ8d1sU/Cffw6K45rNqlZRxPRtFxOiGj7DI3WY655SxpLPssNQohgRXm1NEGIvu5cxJbz+HlqmUq/98eLYH3eX4eeR35TvX5YoF+//9LZxdPz5hzX7CJbA9GSprsGawl8g6IVrDhWzuXiSk1JtEEqWXX0OaLvcvPU9WFM8tn35WLto2jMyecpXf98oC/f1Aoe4DHOcU2a24b6osmdn8TQgJJUXoK0aTqai/bEvOP8YYomaKnWyfc/VBfNCaKfbTpiOUqiqbGwxQ35uN50RdO8AdEY3ibvlivHuu10W6qLlkvUEW2fXpzs2UivHEokJ0MXz4uWnHdb0UI+vknmNBJ5NxQtvcn2EX4W2/XhP6W6aGkzPLqJQQr+H1sfuRAS3Ehu4HrRBiE5XO3WonmcLCp6kTYQTVZjFwcgXE2qi/Y8hdUHHDwQDZgA0YAJLyAaeItANGACRAMmQDRgAkQDJkA0YAJEAyZkouG1VaA2xddW4UV8oCbsUvFFfAA0pTgIQFUu6R85gfNCGIhdXwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,248" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='New column 1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='New column 2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='6' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='6' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column css-selector='.p24_featureDetails' name='Column2' attr='text' /&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='div' idx='6' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='span' idx='4' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' idx='6' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='span' idx='4' /&gt;&lt;webctrl tag='span' idx='4' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Page" MaximumResults="6" ScopeIdentifier="75821e6f-1986-4a8d-8be4-a60d3efd9f4a" Version="V1">
+                    <uix:NExtractData.NextLink>
+                      <uix:TargetAnchorable BrowserURL="https://www.property24.com/apartments-for-sale/advanced-search/results/p2?sp=cid%3d432%2c445#111472898" DesignTimeRectangle="853, 324, 54, 13" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl aaname='             Next          ' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='             Next          ' tag='A' type='' class='pull-right' check:innerText='Next' /&gt;" Guid="eb1c0df7-ad62-4df3-afed-074392726f96" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAARCAYAAACM0L/dAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGWSURBVFhH7ZZPSwJBGMb9Gh261dcp2u/gqegQ9OfizS+QeFgIvITdoxWSgoLCEs1AxTA01mJbRPGwIMsi7tPozNi4bCY5mod9YFje+bO8v33eedkQlkCu66Lf76PX68FxHNi2jW63C8uy0Ol00Gw2YRgGdF1HvV7HykGRnZxeAegiFYDOBdSsQglnEQqXkGFTKJRInIWitdnEH8TeES2w2Ef/BCqALQVoDYnYPW5rcwAduSoB1NTyM4K2kDu7xvruDVIvEkEVtUSfAzgf0IzKPwYZkSpMcU5tkKiNZITGRycU0rvfq99L9xMPp2ms7VzhoizLUZIsTZy46gEdzQ+jBqJs/0B0LY+kNn5mdkf5HX3HXSKF1e20PFBfdzmYd3CXxNIXnJMG+lHE8d45NmKPEkGJxBIdA/2h/OYKalYQ309hM55DRVozYqBi4uOl65c0u5cEMMPAvKXLYz9NBiVd9/ASW+ozqlK7Lgcl4mBikqLTdE0fNR+677sZeePhHfYph8mgLbw+lfEW/BlNpwB0kQpApYECX8QGVvpGqkt5AAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='EcosystemId' title='Apartment / flat for sale in Multiple Suburbs - Page 2' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NExtractData.NextLink>
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.property24.com/for-sale/cape-town/western-cape/432/p6" DesignTimeRectangle="8, 111, 1349, 6940" FriendlyName="'Please note'" FullSelectorArgument="&lt;webctrl tag='DIV' /&gt;" Guid="fb97dd4e-3df7-40db-924f-862899bcba71" InformativeScreenshot="6c8d063ff15f3f6365bbc8f7533a39ab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='EcosystemId' title='Property and houses for sale in Cape Town : Cape Town Property : Property24.com - Page 6' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NExtractData>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <uix:NExtractData AppendResults="False" ContinueOnError="False" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='price'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='BedRooms'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Bathrooms'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column10' Name='Area'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='7' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' idx='7' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='div' idx='7' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='span' idx='4' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='text'&gt;&lt;webctrl tag='div' idx='7' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='span' idx='4' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column10' attr='text'&gt;&lt;webctrl tag='div' idx='7' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='span' idx='4' /&gt;&lt;webctrl tag='span' idx='4' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="434,156" sap2010:WorkflowViewState.IdRef="NExtractData_4" InteractionMode="Simulate" LimitExtractionTo="Page" MaximumResults="7" ScopeIdentifier="75821e6f-1986-4a8d-8be4-a60d3efd9f4a" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.property24.com/for-sale/cape-town/western-cape/432/p3" DesignTimeRectangle="836, 563, 48, 13" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl aaname='             Next          ' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='             Next          ' tag='A' type='' class='pull-right' check:innerText='Next' /&gt;" Guid="cf7c4485-1d53-4f1f-b7b9-aa3d61b0b5e3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAARCAYAAACSGY9uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFESURBVEhL7ZQ/a8MwEMX9GT12z5S1FDJk85iltEO+gIdAt7pj10CI8WI6ZKmTSR1CSwm4ECgv+nOWpQS7VpzBbf1A2HfWmfeTdPLwR5RlGfI8Rw/UVf0DILaCP1jAG6/AZGKLcGzGbppPz6/Ffk8vzVUNxEeQiEQboDa1DPc3MSbpjuJmqgCK4Wsjx6YoJmg/2gJJqmJz/mCJ4aic5/F/hq5Un2sE125QlTsURPRMbCDrCEkQZZRFsTRe1okJGwQCRi/GGXKEqgQSK1+YDzUEGTwa1tEUOQ1wAaDvdzzdLnH1wPBFqTrVApn9ZAFNNzTZlAF7KSAO83zHYWbNYITqgbjkLhmmVHzaDyqfYk791P5C+XCGEfoRSO+SNmVfCgLikfpH1ZTfJVRxYRRxY+3w+vLmBCN0CvTL1QN1XT1Q16WAchwAbwsSOrYhrboAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='EcosystemId' title='Property and houses for sale in Cape Town : Cape Town Property : Property24.com - Page 3' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.property24.com/for-sale/cape-town/western-cape/432/p3" DesignTimeRectangle="8, 111, 1349, 7743" FriendlyName="'Please note'" FullSelectorArgument="&lt;webctrl tag='DIV' /&gt;" Guid="7d91a699-e3a5-4d4a-bd74-226dacedd1a9" InformativeScreenshot="f94429671e6e77076dbbbd27d5919eae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='EcosystemId' title='Property and houses for sale in Cape Town : Cape Town Property : Property24.com - Page 3' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:BuildDataTable DataTable="[BuiltdataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;url&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;bedrooms&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;bathrooms&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;area&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,1520" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,1404" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="price" />
+                      <Variable x:TypeArguments="x:String" Name="bath" />
+                      <Variable x:TypeArguments="x:String" Name="garage" />
+                      <Variable x:TypeArguments="x:String" Name="area" />
+                      <Variable x:TypeArguments="x:String" Name="bed" />
+                      <Variable x:TypeArguments="x:String" Name="Url" />
+                      <Variable x:TypeArguments="x:String" Name="desc" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="0" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[Row]">
+                      <ui:GetRowItem.Value>
+                        <OutArgument x:TypeArguments="x:String">[price]</OutArgument>
+                      </ui:GetRowItem.Value>
+                    </ui:GetRowItem>
+                    <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="1" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[Row]">
+                      <ui:GetRowItem.Value>
+                        <OutArgument x:TypeArguments="x:String">[Url]</OutArgument>
+                      </ui:GetRowItem.Value>
+                    </ui:GetRowItem>
+                    <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="2" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[Row]">
+                      <ui:GetRowItem.Value>
+                        <OutArgument x:TypeArguments="x:String">[bed]</OutArgument>
+                      </ui:GetRowItem.Value>
+                    </ui:GetRowItem>
+                    <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="3" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[Row]">
+                      <ui:GetRowItem.Value>
+                        <OutArgument x:TypeArguments="x:String">[bath]</OutArgument>
+                      </ui:GetRowItem.Value>
+                    </ui:GetRowItem>
+                    <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="4" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[Row]">
+                      <ui:GetRowItem.Value>
+                        <OutArgument x:TypeArguments="x:String">[area]</OutArgument>
+                      </ui:GetRowItem.Value>
+                    </ui:GetRowItem>
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{price,Url,bed,bath,area}]" DataTable="[BuiltdataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <ui:FilterDataTable DataTable="[BuiltdataTable]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="434,160" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[filterdDataTable]" SelectColumnsMode="Keep">
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["price"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["bedrooms"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["bathrooms"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["area"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="434,293" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,207" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="sheet1" WorkbookPath="C:\Users\khaled.galal\Desktop\hoteldata.xlsx">
+                      <ui:WriteRange.StartingCell>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </ui:WriteRange.StartingCell>
+                    </ui:WriteRange>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAYAAACMGIOFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPFSURBVGhD7ZhbSBVRFIYPREpRdH0oqB5D0CCiIKmMpJt2EyOweinChKKgC0QQZS9BUfSgBREJRVIvPXR5KaMo8SGQpIIsMcTSCBLLy9GjnkvfHtYMe8ZztIcpItYHP+OstfZh/bP3nj0VURRFURRFURRFURRFUUJlpKnxAKpFlyX071D/oXcpKkC5Eoq8/RxddKXu66lz9zsuPXzdvV/Co0j29U4YvHqxqqdk9cjPtUtSrrhPEL9p8lKakdi92l2MScjYAR7SakmFx9R9r6IoheK3G74XFV9ofir3nuYdahzGdJUMccBAdl9F2TvXWDqR75bytMRbP+ZRl7THYNJ72KGBiWTQVCaduNN+W4ZF+o+Vt9jNZVLs1rUbMmQUPIS2YD0mt0g6PGh+lElmLsGMdnIN5pLtXbE8M2644fnx3t2bu01jNNtBc/kmznUNy7XfbZqamIkHYTlfd2tsMX69lISHadw2UlHT+khSkZ/ReBb3LwL5Z5J2wOzJxLfObLl1GHr8YLvduIQ9MFJg522RWydl4UHjnklmbkjCHhidac9o7ommEUllhCW6325cwg7s5UnMbo+bo7bSrv3jJpmllxL2sbO6xfcyknBamMUKu2mW8g9JOURPH623cm2pVGquXY/JYikND5r2THJkeC8WG+LVbo2RhH2YGTLHht2wEcv5iJSYB1Dmxtm3KZZ5CSan2PWY3Crl4UHTnklmrEnCPngJfXFrjCTsgZFSczbazRoNXDjTKCURDC2nxjsuOB9rTByTM+wxf2NPJtiDsyXlwP1ye0/mV77rkpQDs1drN2lkZolZq5USB44c77hgmRoze9E2VGSPxXw5sVUyLBxsk2KiCWPTTI7jIof7VjvP0r3rDAReGpfsBo3Yc++ZtT1S4kDT54N14yguQ8OBxn0mXfEWHQ7GmNEoD2CBGYcR8znmNWZmj2Vb7fxoAEyW2LW/oYQMDQeaTwTNZBLfsWdlWIT99sZuDCOH2V8T0CwpMfttsrny+TaH5dqOBlBUroNybbZ/h6U8wGp44vxAWNC8Z5KlaY6ROv72zSIvntd8tPte7cEXDc0axVFClJTrJxmSFh5Elv07PKzFkgoPTHgmMdMnYfOvk0J0kH25UEI+aMj3YT2WmMmJMiwtdi0mp0s4PDDn7UlM9kh4XGgoajc3hsbdX9TE3FpMOt/GoRIw6TsexoJmNqEdqACtQIVog8jk5iMTL5UhGaFmI8pB8yQULpiLWSbbJPx/wb4rkv8ZWMnLZZmEFUVRFEVRFEVRFEVR/mkikV+DMmJEIgjDmQAAAABJRU5ErkJggg==" InformativeScreenshot="aa80ececed10d39baa3593a1fa73b680.png" Selector="&lt;html app='chrome.exe' htmlwindowname='EcosystemId' title='Property and houses for sale in Cape Town : Cape Town Property : Property24.com - Page 2' /&gt;" Url="https://www.property24.com/for-sale/cape-town/western-cape/432/p2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
